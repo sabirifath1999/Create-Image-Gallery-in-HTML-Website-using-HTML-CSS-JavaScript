@@ -1,0 +1,32 @@
+<html>
+    <head>
+        <title>Image Galary</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+         <div class="product">
+            <div class="product-small-img">
+                <img src="img/Screenshot (41).png" onclick="myFunction(this)">
+                <img src="img/Screenshot (42).png" onclick="myFunction(this)">
+                <img src="img/Screenshot (43).png"
+                onclick="myFunction(this)">
+                <img src="img/Screenshot (39).png"
+                onclick="myFunction(this)">
+
+            </div>
+            <div class="img-container">
+                <img id="imageBox" src="img/Screenshot (41).png">
+
+            </div>
+
+         </div>
+         <script>
+            function myFunction(smallImg)
+            {
+                 var fullImg=document.getElementById("imageBox");
+                 fullImg.src=smallImg.src;
+            }
+         </script>
+    </body>
+</html>
